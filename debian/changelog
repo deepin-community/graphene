@@ -1,3 +1,26 @@
+graphene (1.10.8-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Amin Bandali ]
+  * Change packaging branch to debian/latest
+
+  [ Simon McVittie ]
+  * d/control: Stop generating from a template.
+    We don't use any of the other dh-sequence-gnome features (there are no
+    libtool archives, and we don't use the gnome:Foo family of substvars)
+    so drop the build-dependency on dh-sequence-gnome.
+  * d/control: libgraphene-1.0-dev Provides gir1.2-graphene-1.0-dev.
+    Adding versioned Provides on gir1.2-*-dev corresponding to each GIR XML
+    file is a small step towards being able to exclude GObject-Introspection
+    with a build-profile when cross-compiling.
+    Helps: #1030223
+  * Remove version constraints unnecessary since bullseye
+  * Remove empty debian/patches/series
+  * Update standards version to 4.6.2, no changes needed
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 01 Nov 2023 23:29:51 +0000
+
 graphene (1.10.8-1) unstable; urgency=medium
 
   * New upstream release
