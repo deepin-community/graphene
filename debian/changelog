@@ -1,3 +1,9 @@
+graphene (1.10.8-3) unstable; urgency=medium
+
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Thu, 10 Sep 2026 17:31:16 +0800
+
 graphene (1.10.8-2) unstable; urgency=medium
 
   * Team upload
